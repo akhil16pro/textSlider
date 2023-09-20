@@ -1,0 +1,207 @@
+ <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.com/svgjs"
+          width="512"
+          height="512"
+          x="0"
+          y="0"
+          viewBox="0 0 682.667 682.667"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+          class=""
+        >
+          <g>
+            <defs>
+              <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                <path
+                  d="M0 512h512V0H0Z"
+                  fill="#000000"
+                  data-original="#000000"
+                ></path>
+              </clipPath>
+            </defs>
+            <path
+              d="m0 0-33.11-19.11M81.97 47.32 25.95 14.98m221.18-242.132-57.48 33.19m-67.64-105.42v104.01m-30-104.01v104.01m-70.06.01-55.06-31.79m23.75 48.35-38.74-22.37m92.88 90.85-92.88 53.63m93.81-19.53-78.82 45.51m125.12 1.24v70.99m155.12-72.23-86.31-49.83m-38.81 48.9v73.16m140.11-98.21-61.68-35.62m61.68-108.86-43.37 25.04m28.38 157.02-115.08 66.43m-65.08 25.98L-48.11 6.868m310.24 0-115.08 66.43m-235.2-268.66v132.86m30-132.86v132.86m140.12-242.68-115.08 66.43m100.08-92.41-115.08 66.43m310.24 0-115.08-66.43m100.08 92.41-115.08-66.43m140.12 109.82v132.86m30-132.86v132.86"
+              style="
+                stroke-width: 15;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 10;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+              transform="matrix(1.33333 0 0 -1.33333 198.654 169.427)"
+              fill="none"
+              stroke="#FFF"
+              stroke-width="15"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-dasharray="none"
+              stroke-opacity=""
+              data-original="#000000"
+              class=""
+            ></path>
+            <g
+              clip-path="url(#a)"
+              transform="matrix(1.33333 0 0 -1.33333 0 682.667)"
+            >
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(296.463 464.03)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(296.463 47.965)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(476.625 151.982)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(116.301 151.982)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(476.625 360.015)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0c0-22.347-18.116-40.463-40.463-40.463-22.348 0-40.464 18.116-40.464 40.463s18.116 40.463 40.464 40.463C-18.116 40.463 0 22.347 0 0Z"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(116.301 360.015)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                d="M0 0h6.09C35.98 0 60.2 24.23 60.2 54.11c0 14.95-6.05 28.47-15.85 38.26-9.79 9.79-23.32 15.85-38.26 15.85h-16.24v.54c0 32.13-26.05 58.17-58.17 58.17-16.07 0-30.61-6.51-41.14-17.04-10.53-10.52-17.04-25.07-17.04-41.13V79.25h-21.92c-21.88 0-39.62-17.74-39.62-39.62 0-10.95 4.43-20.85 11.61-28.02C-169.27 4.44-159.36 0-148.42 0H-30"
+                style="
+                  stroke-width: 15;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                transform="translate(320.27 189.56)"
+                fill="none"
+                stroke="#FFF"
+                stroke-width="15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="10"
+                stroke-dasharray="none"
+                stroke-opacity=""
+                data-original="#000000"
+                class=""
+              ></path>
+            </g>
+          </g>
+        </svg>

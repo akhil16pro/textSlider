@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="./scss/main.css?ver=5.6.3"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <main>
+      <sliderWrap>
+        <slide>
+          <div class="eyeBrow"></div>
+          <div class="title"></div>
+        </slide>
+        <doteWrap>
+          <div class="inner"></div>
+          <div class="navWrap">
+            <div class="nav left_">
+              <svg
+                data-v-9e679a9c=""
+                viewBox="0 0 11 20"
+                fill="none"
+                class="arrow"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.790119 20L10.768 10.0222L10.7458 9.99997L10.768 9.97773L0.790119 -5.72205e-05L0.0830078 0.707045L9.37606 9.99997L0.0830078 19.2929L0.790119 20Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="nav right_">
+              <svg
+                data-v-9e679a9c=""
+                viewBox="0 0 11 20"
+                fill="none"
+                class="arrow"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.790119 20L10.768 10.0222L10.7458 9.99997L10.768 9.97773L0.790119 -5.72205e-05L0.0830078 0.707045L9.37606 9.99997L0.0830078 19.2929L0.790119 20Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </doteWrap>
+      </sliderWrap>
+    </main>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/splittext.min.js"></script>
+  <script>
+    gsap.registerPlugin(SplitText)
+    const APG = {
+      activeIndex: 0,
+      preIndex: 0,
+      animating: false,
+      sliderWrap: [
+        ['innovation', 'Guerlain'],
+        ['innovation', 'Hennessy'],
+        ['innovation', 'Loro&nbsp;Piana'],
+        ['innovation', 'meet&nbsp;TOSHI'],
+        ['innovation', 'Louis&nbsp;Vuitton'],
+        ['innovation', 'Parfums&nbsp;Christian Dior'],
+        ['innovation', 'RIMOWA'],
+        ['innovation', 'Meet&nbsp;Bambuser'],
+        ['innovation', 'Ruinart'],
+        ['innovation', 'Sephora'],
+        ['innovation', 'Meet&nbsp;SimpliField'],
+        ['innovation', 'TAG&nbsp;Heuer'],
+        ['innovation', 'Tiffany&nbsp;&&nbsp;Co.'],
+        ['innovation', 'LVMH&nbsp;Innovation&nbsp;Award'],
+        ['innovation', 'La&nbsp;Maison&nbsp;des&nbsp;Startups'],
+      ],
+
+      changeDote: () => {
+        let dotes = document.querySelectorAll('dote')
+
+        dotes.forEach((dote, index) => {
+          if (index == APG.activeIndex) {
+            dote.classList.add('active')
+          } else {
+            dote.classList.remove('active')
+          }
+        })
+      },
+      textChange: () => {
+        let eyeBrow = document.querySelector('.eyeBrow'),
+          title = document.querySelector('.title')
+
+        eyeBrow.innerHTML = APG.sliderWrap[APG.activeIndex][0]
+        title.innerHTML = APG.sliderWrap[APG.activeIndex][1]
+
+        let eyeBrowSplit = new SplitText(eyeBrow, { type: 'chars' })
+        let titleSplit = new SplitText(title, { type: 'chars' })
+      },
+
+      slideChange: () => {
+        // dote update
+        APG.changeDote()
+        if (!APG.animating) {
+          if (APG.preIndex !== APG.activeIndex) {
+            //animation
+            APG.animating = true
+            APG.animation()
+          } else {
+            // Text update
+            APG.textChange()
+          }
+        }
+      },
+      animation: () => {
+        let tl = gsap.timeline()
+        let targets = gsap.utils.toArray('.eyeBrow div'),
+          titleTargets = gsap.utils.toArray('.title div')
+
+        tl.to(targets, 0.4, {
+          yPercent: -90,
+          stagger: 0.2,
+          duration: 1,
+
+          stagger: {
+            from: 'center',
+            amount: 0.1,
+          },
+        })
+
+        tl.to(
+          titleTargets,
+          0.4,
+          {
+            yPercent: -90,
+            stagger: 0.2,
+            duration: 1,
+
+            stagger: {
+              from: 'center',
+              amount: 0.1,
+            },
+            onComplete: () => {
+              console.log('done anim')
+              // Text update
+              APG.textChange()
+              let eyeBrow = gsap.utils.toArray('.eyeBrow div'),
+                title = gsap.utils.toArray('.title div')
+
+              tl.set(eyeBrow, {
+                yPercent: 110,
+              })
+
+              tl.set(title, {
+                yPercent: 110,
+              })
+              tl.add('start')
+
+              tl.to(
+                eyeBrow,
+                0.5,
+                {
+                  yPercent: 0,
+                  stagger: 0.2,
+                  duration: 1,
+
+                  stagger: {
+                    from: 'center',
+                    amount: 0.2,
+                  },
+                },
+                'start'
+              )
+              tl.to(
+                title,
+                0.5,
+                {
+                  yPercent: 0,
+                  stagger: 0.2,
+                  duration: 1,
+
+                  stagger: {
+                    from: 'center',
+                    amount: 0.2,
+                  },
+                  onComplete: () => {
+                    console.log('final anim Done')
+                    APG.animating = false
+                  },
+                },
+                'start'
+              )
+            },
+          },
+          0.1
+        )
+      },
+
+      slider: () => {
+        let navLeft = document.querySelector('.nav.left_'),
+          navRight = document.querySelector('.nav.right_'),
+          doteWrap = document.querySelector('doteWrap .inner'),
+          sliderLength = APG.sliderWrap.length
+        //activeIndex = 0,
+        //preIndex = 0
+
+        // dote generate
+        for (let i = 0; i < sliderLength; i++) {
+          const el = document.createElement('dote')
+          doteWrap.appendChild(el)
+        }
+
+        // nav click
+        navLeft.addEventListener('click', (e) => {
+          e.preventDefault()
+          APG.preIndex = APG.activeIndex
+          if (APG.activeIndex !== 0) {
+            APG.activeIndex -= 1
+          } else {
+            APG.activeIndex = sliderLength - 1
+          }
+
+          // update change
+          APG.slideChange()
+        })
+        navRight.addEventListener('click', (e) => {
+          e.preventDefault()
+          APG.preIndex = APG.activeIndex
+          if (sliderLength - 1 !== APG.activeIndex) {
+            APG.activeIndex += 1
+          } else {
+            APG.activeIndex = 0
+          }
+
+          // update change
+          APG.slideChange()
+        })
+      },
+      autoPlay: (sliderLength) => {
+        setInterval(() => {
+          APG.preIndex = APG.activeIndex
+          if (sliderLength - 1 !== APG.activeIndex) {
+            APG.activeIndex += 1
+          } else {
+            APG.activeIndex = 0
+          }
+          APG.slideChange()
+        }, 5000)
+      },
+    }
+
+    setTimeout(() => {
+      APG.slider()
+
+      APG.slideChange(APG.activeIndex)
+      APG.autoPlay(APG.sliderWrap.length)
+    }, 100)
+  </script>
+</html>

@@ -14,7 +14,7 @@ main {
 
   position: relative;
   padding: 2vw;
-  min-height: calc(100vh - 4vw);
+  min-height: calc(100svh - 4vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +24,7 @@ main {
 .title {
   font-family: 'Croissant One', cursive;
   font-size: 5vw;
+  line-height: 110%;
   font-size: clamp(3rem, 5vw, 10rem);
   overflow: hidden;
   @media only screen and (max-width: 767px) {
@@ -87,7 +88,7 @@ sliderwrap {
       width: 50px;
     }
     @media only screen and (max-width: 767px) {
-      width: 38px;
+      width: 35px;
     }
     &:hover {
       background-color: rgba(#fff, 0.25);
@@ -131,7 +132,7 @@ dotewrap {
       gap: 2vw;
     }
     @media only screen and (max-width: 767px) {
-      gap: 3vw;
+      gap: 2.5vw;
     }
   }
   dote {
